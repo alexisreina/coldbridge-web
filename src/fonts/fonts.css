@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Adagio_Slab";
+  src: url("./2BBA62_11_0.eot");
+  src: url("./2BBA62_11_0.eot?#iefix") format("embedded-opentype"),
+  url("./2BBA62_11_0.woff") format("woff"),
+  url("./2BBA62_11_0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adagio_Slab';
+  src: url('./2BBA62_7_0.eot');
+  src: url('./2BBA62_7_0.eot?#iefix') format('embedded-opentype'),
+  url('./2BBA62_7_0.woff') format('woff'),
+  url('./2BBA62_7_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("./MuseoSans_500-webfont.eot");
+  src: url("./MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("./MuseoSans_500-webfont.woff") format("woff"),
+  url("./MuseoSans_500-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("./MuseoSans-300.eot?#iefix") format("embedded-opentype"),
+  url("./MuseoSans-300.otf") format("opentype"),
+  url("./MuseoSans-300.woff") format("woff"),
+  url("./MuseoSans-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

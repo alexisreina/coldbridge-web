@@ -1,0 +1,147 @@
+:root {
+  --brand-color: #E14F2B;
+  --text-color: #49453C;
+  --placeholder-color: #9d281a;
+  --bg-color: #fff;
+  --border-color: #f9f9f9;
+  --font-serif: 'Adagio_Slab', serif;
+  --font-sans: 'Museo Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 106.25%;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  html {
+    font-size: 118.75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 180%;
+  }
+}
+
+body {
+  font: 300 1rem / 1.5 var(--font-sans);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+p, blockquote, ol, ul, li, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 0.625rem;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+input, label, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
+  transition-duration: 200ms;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font: 300 1rem/1.5 inherit;
+  border-bottom: 1px solid currentColor;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+button, .button {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  font: 300 .75rem / 1 inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.125rem;
+  background: none;
+  border: 1px solid currentColor;
+}
+
+/* Text Selection */
+
+/* WebKit / Blink Browsers */
+
+::selection {
+  background: var(--text-color);
+  color: #fff;
+}
+
+/* Gecko Browsers */
+
+::-moz-selection {
+  background: var(--text-color);
+  color: #fff;
+}
+
+/* Placeholder color */
+
+::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+:-moz-placeholder {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .is-mobile .section {
+    border-bottom: 1px solid var(--border-color);
+  }
+  .is-mobile .section#contact {
+    border-bottom: 0;
+  }
+}
