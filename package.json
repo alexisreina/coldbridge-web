@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "coldbridge-web",
+  "description": "Coldbridge Studio Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alexis Reina <alexis@coldbridgestudio.com>",
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
@@ -12,7 +12,9 @@
     "react-transition-group": "^2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "static-site",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
