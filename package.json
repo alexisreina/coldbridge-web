@@ -16,7 +16,7 @@
     "static-site",
     "react"
   ],
-  "license": "MIT",
+  "license": "LIMITED",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
