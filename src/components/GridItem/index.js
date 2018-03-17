@@ -4,13 +4,19 @@ import PropTypes from 'prop-types'
 const calcGridItemWidth = size => {
   // console.log(size);
   switch (size) {
-    case '1of4': return '25%'
-    case '1of3': return '33.33333333%'
+    case '1of4':
+      return '25%'
+    case '1of3':
+      return '33.33333333%'
     case '1of2':
-    case '2of4': return '50%'
-    case '2of3': return '66.66666666%'
-    case '3of4': return '75%'
-    default: return null
+    case '2of4':
+      return '50%'
+    case '2of3':
+      return '66.66666666%'
+    case '3of4':
+      return '75%'
+    default:
+      return null
   }
 }
 

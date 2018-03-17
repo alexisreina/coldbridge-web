@@ -1,7 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default ({ children }) => (
-  <span style={{ color: '#E14F2B' }}>
-    {children}
-  </span>
+const TextHightlighted = ({ children }) => (
+  <span style={{ color: '#E14F2B' }}>{children}</span>
 )
+
+TextHightlighted.propTypes = {
+  children: PropTypes.string.isRequired,
+}
+
+export default TextHightlighted

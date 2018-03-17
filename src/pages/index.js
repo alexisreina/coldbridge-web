@@ -16,9 +16,7 @@ const IndexPage = () => (
       <HomeAbout />
       <HomeServices />
     </main>
-    <footer>
-      {/* include contactForm.html */}
-    </footer>
+    <footer>{/* include contactForm.html */}</footer>
   </div>
 )
 

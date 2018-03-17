@@ -15,11 +15,12 @@
 // import './../fonts/MuseoSans-300.ttf'
 // import './../fonts/MuseoSans-300.woff'
 
-import './../fonts/fonts.css'
-import './index.css'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+
+import './../fonts/fonts.css'
+import './index.css'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
@@ -30,22 +31,20 @@ const TemplateWrapper = ({ children, data }) => (
         { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
     />
-    <div>
-      {children()}
-    </div>
+    <div>{children()}</div>
     {/* include modal.html */}
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
 }
 
 export const query = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
-        title,
+        title
         description
       }
     }

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { css } from 'glamor'
 import Section from './../../components/Section'
 import Heading from './../../components/Heading'
 import TextHighlighted from './../../components/TextHighlighted'
@@ -25,60 +24,36 @@ export default () => (
         Qué Hacemos
       </Heading>
       <Grid>
-        <GridItem md='1of3'>
+        <GridItem md="1of3">
           <div>
-            <ServiceHeading>
-              Brand + Identidad
-            </ServiceHeading>
+            <ServiceHeading>Brand + Identidad</ServiceHeading>
             <ServiceList>
-              <ServiceItem>
-                Logo + Identidad Visual
-              </ServiceItem>
-              <ServiceItem>
-                Identidad Corporativa
-              </ServiceItem>
-              <ServiceItem style={{ marginBottom: '2rem' }}>
-                Naming
-              </ServiceItem>
+              <ServiceItem>Logo + Identidad Visual</ServiceItem>
+              <ServiceItem>Identidad Corporativa</ServiceItem>
+              <ServiceItem style={{ marginBottom: '2rem' }}>Naming</ServiceItem>
             </ServiceList>
           </div>
         </GridItem>
-        <GridItem md='1of3'>
+        <GridItem md="1of3">
           <div>
-            <ServiceHeading>
-              Impresión
-            </ServiceHeading>
+            <ServiceHeading>Impresión</ServiceHeading>
             <ServiceList>
-              <ServiceItem>
-                Materiales Promocionales
-              </ServiceItem>
-              <ServiceItem>
-                Dossier + Catálogo
-              </ServiceItem>
-              <ServiceItem>
-                Packaging
-              </ServiceItem>
+              <ServiceItem>Materiales Promocionales</ServiceItem>
+              <ServiceItem>Dossier + Catálogo</ServiceItem>
+              <ServiceItem>Packaging</ServiceItem>
               <ServiceItem style={{ marginBottom: '2rem' }}>
                 Posters
               </ServiceItem>
             </ServiceList>
           </div>
         </GridItem>
-        <GridItem sm='1of3'>
+        <GridItem sm="1of3">
           <div>
-            <ServiceHeading>
-              Digital
-            </ServiceHeading>
+            <ServiceHeading>Digital</ServiceHeading>
             <ServiceList>
-              <ServiceItem>
-                Diseño Interacción
-              </ServiceItem>
-              <ServiceItem>
-                User Experience
-              </ServiceItem>
-              <ServiceItem>
-                Diseño Web
-              </ServiceItem>
+              <ServiceItem>Diseño Interacción</ServiceItem>
+              <ServiceItem>User Experience</ServiceItem>
+              <ServiceItem>Diseño Web</ServiceItem>
               <ServiceItem style={{ marginBottom: '2rem' }}>
                 Diseño Móvil
               </ServiceItem>
@@ -100,7 +75,10 @@ export default () => (
               <ServiceItem small style={{ marginBottom: '2rem' }}>
                 <span>
                   <TextHighlighted>*</TextHighlighted>
-                  <small>Servicios adicionales ofrecidos a través de nuestra red de colaboradores.</small>
+                  <small>
+                    Servicios adicionales ofrecidos a través de nuestra red de
+                    colaboradores.
+                  </small>
                 </span>
               </ServiceItem>
             </ServiceList>

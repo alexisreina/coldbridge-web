@@ -24,10 +24,7 @@ const Grid = ({ children, ...rest }) => (
 )
 
 Grid.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.array,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
 }
 
 export default Grid

@@ -1,8 +1,14 @@
 import React from 'react'
-import { css } from 'glamor'
+import PropTypes from 'prop-types'
 
-export default ({ children }) => (
-  <p css={{ fontSize: '1.1865rem' }}>
+const Lead = ({ children, ...rest }) => (
+  <p {...rest} css={{ fontSize: '1.1865rem' }}>
     {children}
   </p>
 )
+
+Lead.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+}
+
+export default Lead

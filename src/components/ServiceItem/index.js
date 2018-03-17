@@ -8,7 +8,7 @@ const ServiceItem = ({ children, small, ...rest }) => (
       marginBottom: '0.75rem',
       textAlign: 'center',
       font: '300 italic 1rem/1.5 Adagio_Slab, serif',
-      lineHeight: small ? 1.1 : null
+      lineHeight: small ? 1.1 : null,
     }}
   >
     {children}
@@ -16,10 +16,8 @@ const ServiceItem = ({ children, small, ...rest }) => (
 )
 
 ServiceItem.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+    .isRequired,
   small: PropTypes.bool,
 }
 
