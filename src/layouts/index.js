@@ -1,20 +1,3 @@
-// import './../fonts/2BBA62_7_0.eot'
-// import './../fonts/2BBA62_7_0.ttf'
-// import './../fonts/2BBA62_7_0.woff'
-// import './../fonts/2BBA62_10_0.eot'
-// import './../fonts/2BBA62_10_0.ttf'
-// import './../fonts/2BBA62_10_0.woff'
-// import './../fonts/2BBA62_11_0.eot'
-// import './../fonts/2BBA62_11_0.ttf'
-// import './../fonts/MuseoSans_500-webfont.eot'
-// import './../fonts/MuseoSans_500-webfont.svg'
-// import './../fonts/MuseoSans_500-webfont.ttf'
-// import './../fonts/MuseoSans_500-webfont.woff'
-// import './../fonts/MuseoSans-300.eot'
-// import './../fonts/MuseoSans-300.svg'
-// import './../fonts/MuseoSans-300.ttf'
-// import './../fonts/MuseoSans-300.woff'
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -38,6 +21,7 @@ const TemplateWrapper = ({ children, data }) => (
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired, // eslint-disable-line
 }
 
 export const query = graphql`
