@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import 'modern-normalize/modern-normalize.css'
 import './../fonts/fonts.css'
 import './index.css'
 
