@@ -1,0 +1,49 @@
+/* REVIEW COMPONENT */
+.review {
+    position: relative;
+    padding: 2rem 1rem 1rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    border: 2px solid $brand-color;
+    background-color: $bg-color;
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem 1.5rem 1.5rem
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        display: inline-block;
+    }
+
+    &::before {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        background: #fff;
+        border-top: 2px solid $brand-color;
+        border-left: 2px solid $brand-color;
+        top: -1.5rem;
+        left: 50%;
+        transform: rotate(45deg) translate(-25%, 0.625rem);
+    }
+
+    &::after {
+        content: "\201C";
+        top: -6rem;
+        left: 50%;
+        transform: translateX(-25%);
+        font: 300 6rem/1 $font-serif;
+        text-align: center;
+        color: $brand-color;
+    }
+
+    &__body {
+        font: 300 1rem/1.5 $font-serif;
+    }
+
+    &__cite {
+        font: 300 0.665rem/1 $font-serif;
+    }
+}
