@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import './../fonts/fonts.css'
 import './index.css'
+import favicon from './favicon.ico'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
@@ -13,7 +14,9 @@ const TemplateWrapper = ({ children, data }) => (
         { name: 'description', content: data.site.siteMetadata.description },
         { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
-    />
+    >
+      <link rel="shortcut icon" href={favicon} />
+    </Helmet>
     <div>{children()}</div>
     {/* include modal.html */}
   </div>
