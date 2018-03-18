@@ -1,48 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Transition from 'react-transition-group/Transition'
+import FadeInLeft from './components/FadeInLeft'
 import Logo from './components/Logo'
 import Claim from './components/Claim'
-import headerImg from './cbs-img-header-xs.jpg'
 
-const duration = 250
+// Images
+import headerImgXs from './cbs-img-header-xs.jpg'
+import headerImg from './cbs-img-header.jpg'
 
+// TODO: create a theme
 const brandColor = '#e14f2b'
-
-const defaultStyle = {
-  transition: `all ${duration}ms ease-in-out`,
-  transform: `translateX(1rem)`,
-  opacity: 0,
-}
-
-const transitionStyles = {
-  entering: { opacity: 0, transform: `translateX(1rem)` },
-  entered: { opacity: 1, transform: `translateX(0)` },
-}
-
-const FadeInLeft = ({ in: inProp, children }) => (
-  <Transition in={inProp} timeout={duration}>
-    {state => (
-      <div
-        style={{
-          ...defaultStyle,
-          ...transitionStyles[state],
-        }}
-      >
-        {children}
-      </div>
-    )}
-  </Transition>
-)
-
-FadeInLeft.propTypes = {
-  in: PropTypes.bool,
-  children: PropTypes.element.isRequired,
-}
-
-FadeInLeft.defaultProps = {
-  in: false,
-}
 
 class Header extends React.Component {
   constructor() {
@@ -76,6 +42,9 @@ class Header extends React.Component {
             background: `linear-gradient(to top, rgba(255,255,255,.33), rgba(255,255,255,.33)), url(${headerImg}) center top/cover no-repeat #dedede`,
             padding: '1rem',
             minHeight: 'calc(100vh - .5rem)',
+            '@media(max-width: 1024px), (max-heigth: 576px)': {
+              background: `linear-gradient(to top, rgba(white, .33), rgba(white, .33)), url(${headerImgXs}) center top / cover no-repeat #dedede`,
+            },
           }}
         >
           <Logo fill={brandColor} />
